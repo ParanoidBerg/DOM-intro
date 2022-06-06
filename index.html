@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const container = document.createElement('div')
+        const text = document.createElement('b')
+        const link1 = document.createElement('a')
+        const link2 = document.createElement('a')
+        const link3 = document.createElement('a')
+
+        text.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor sed do eiusmod temporsed do eiusmod tempor'
+        link1.href = 'https://intocode.ru/'
+        link2.href = 'https://www.google.ru/'
+        link3.href = 'https://www.instagram.com/'
+        link1.textContent = 'intocode'
+        link2.textContent = 'google'
+        link3.textContent = 'instagram'
+
+        container.append(link1, link2, link3)
+        container.style.display = 'flex'
+        container.style.width = '300px'
+        container.style.justifyContent = 'space-between'
+        container.style.margin = 'auto'
+
+        text.style.textAlign = 'center'
+        text.style.border = '1px solid red '
+        text.style.borderRadius = '20px'
+        text.style.display = 'table'
+        text.style.margin = '0 auto'
+        text.style.width = '300px'
+        text.style.padding = '10px'
+    
+
+        document.body.prepend(text)
+        document.body.append(container)
+
+    </script>
+    
+</body>
+</html>
